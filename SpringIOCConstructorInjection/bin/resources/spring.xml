@@ -1,0 +1,27 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<!-- <bean id="obj" class="pp.Employee"> -->
+	<!-- <constructor-arg value="200"></constructor-arg> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="obj" class="pp.Employee"> -->
+	<!-- <constructor-arg value="200"></constructor-arg> -->
+	<!-- <constructor-arg value="paramita"></constructor-arg> -->
+	<!-- </bean> -->
+
+
+	<!-- <bean id="obj" class="pp.Employee"> -->
+	<!-- <constructor-arg value="paramita is not student" index="2"></constructor-arg> -->
+	<!-- <constructor-arg value="paramita" index="1"></constructor-arg> -->
+	<!-- <constructor-arg value="200" index="0"></constructor-arg> -->
+	<!-- </bean> -->
+
+
+
+	<bean id="obj" class="pp.Employee">
+		<constructor-arg value="200" type="int"></constructor-arg>
+	</bean>
+
+
+</beans>

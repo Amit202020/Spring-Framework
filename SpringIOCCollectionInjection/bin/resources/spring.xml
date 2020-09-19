@@ -1,0 +1,45 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+    <bean id="add" class="pp.Address">
+    		<property name="city" value="bangalore"></property>
+    		<property name="state" value="karnataka"></property>
+    </bean>
+
+	<bean id="stu" class="pp.Student">
+	    <constructor-arg>
+	    	<value>2323</value>
+	    </constructor-arg>
+	    <constructor-arg>
+	    	<value>srini</value>
+	    </constructor-arg>
+	    <constructor-arg>
+	    	<list>
+	    		<value>amit@gmail.com</value>
+	    		<value>srini@gmail.com</value>
+	    		<value>paro@gmail.com</value>
+	    		<value>nik@gmail.com</value>
+	    	</list>
+	    </constructor-arg>
+	    <constructor-arg>
+	    	<set>
+	    		<value>999999999</value>
+	    		<value>888888888</value>
+	    	</set>
+	    </constructor-arg>
+	    
+	    <property name="refs">
+	    	<map>
+	    		<entry key="team1" value="p1"></entry>
+	    		<entry key="team5" value="p2"></entry>
+	    		<entry key="team9" value="p5"></entry>
+	    	</map>
+	    </property>
+
+	    <property name="address" ref="add" />
+	</bean>
+	
+	
+	
+</beans>

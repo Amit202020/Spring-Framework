@@ -1,0 +1,17 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+
+	<bean id="e" class="pp.Engine">
+		<property name="modelNo" value="eford2020" />
+	</bean>
+	
+		
+	<bean id="c" class="pp.Car" autowire="autodetect">
+		<property name="carName" value="eford" />
+<!-- 		<property name="engine" ref="e" /> -->
+	</bean>
+
+
+</beans>

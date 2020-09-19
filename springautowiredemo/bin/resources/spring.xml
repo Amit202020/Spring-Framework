@@ -1,0 +1,19 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+		"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+    <bean id="e" class="com.Engine">
+    	<property name="modelNo" value="EC2017"></property>
+    </bean>
+    
+     <bean id="e1" class="com.Engine" autowire-candidate="false">
+    	<property name="modelNo" value="EC2016"></property>
+    </bean>
+    <bean id="c" class="com.Car" autowire="byType">
+        <property name="carName" value="figo"></property>
+        <property name="carBrand" value="ford"></property>
+      <!-- <property name="engine" ref="e"></property> -->
+    </bean>
+	
+</beans>
+

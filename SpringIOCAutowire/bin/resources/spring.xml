@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+
+    <bean id="e1" class="pp.Engine">
+		<property name="modelNo" value="eford2021" />
+	</bean>
+
+	<bean id="e" class="pp.Engine" autowire-candidate="false">
+		<property name="modelNo" value="eford2020" />
+	</bean>
+	
+	<bean id="e2" class="pp.Engine" autowire-candidate="false">
+		<property name="modelNo" value="eford2022" />
+	</bean>
+	
+	<bean id="c" class="pp.Car" autowire="byType">
+		<property name="carName" value="eford" />
+<!-- 		<property name="engine" ref="e" /> -->
+	</bean>
+
+
+</beans>

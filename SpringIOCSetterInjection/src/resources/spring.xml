@@ -1,0 +1,9 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="obj" class="pp.Employee">
+		<property name="empId" value="1020"></property>
+		<property name="empName" value="srinibus"></property>
+		<property name="empDesc" value="srini is a dev"></property>
+	</bean>
+</beans>
